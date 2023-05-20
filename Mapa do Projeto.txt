@@ -1,0 +1,44 @@
+BlueSpace
+Sistema de Gerenciamento Online
+
+Entidades:
+
+Empreendedor
+Funcionarios
+Cliente Fixo
+Vendas (Relação Cliente_Produto)
+Estoque (produtos e matéria-prima)
+Fornecedores
+
+
+Atividades da plataforma:
+
+- Acesso às informações de Cadastro do usuário
+- Controle de Vendas
+- Controle de Clientes
+- Manipulação de dados de Funcionários
+- Manipulação de Estoque
+- Controle de Estoque conectado às vendas
+- Controle das Contas para controle financeiro
+- Encontar fornecedores através do cadastro de outros usuários
+
+Estrutura do Front End:
+
+- Home
+- Página de Tutorial
+- Login / Cadastro
+- Página de Controle do Empreeendedor (Conteúdo dropdown ou páginas?)
+- Página de Controle do Funcionário
+- Página de Match entre empreendedores
+
+Estrutura do Back End:
+
+-API Rest para controle de informações e funcionamento do peojeto (se possível API REST FULL)
+-Banco de dados MySql (persistência de informações)
+
+- Dependências(Maven, Java 17, Spring 3.1.0, Dev Tools,Spring Web, Spring Security (adicionar por último),
+MySql Driver, Spring Data JPA, Swagger, JUnit (estes últimos procurar as dependências CORRETAS!)
+
+**No controlle das vendas criar um filtro a partir dos clientes**
+
+***Na documentação explicar o por que da não utilização do Lombook***
