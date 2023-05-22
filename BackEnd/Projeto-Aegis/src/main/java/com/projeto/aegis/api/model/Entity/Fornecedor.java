@@ -11,6 +11,7 @@ public class Fornecedor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_fornecedor")
     private Long idFornecedor;
 
     @Column(name = "nome_dominio")

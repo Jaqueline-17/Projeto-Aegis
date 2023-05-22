@@ -2,6 +2,7 @@ package com.projeto.aegis.api.model.Entity;
 
 import com.projeto.aegis.api.Enums.Tipo_Produto;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,12 +13,17 @@ public class Estoque {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_produto")
     private Long idProduto;
    
+    @Column(name = "id_fornecedor")
     private Long idFornecedor;
+    @Column(name = "valor_unitário")
     private Double valorUnitario;
     private Integer quantidade;
+    @Column(name = "valor_total")
     private Double valorTotal;
+    @Column(name = "tipo_produto")
     private Tipo_Produto tipoProduto;
     private String descricao;
 

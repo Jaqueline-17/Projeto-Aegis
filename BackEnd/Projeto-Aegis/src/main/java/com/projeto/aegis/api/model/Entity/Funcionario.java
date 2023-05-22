@@ -19,6 +19,7 @@ public class Funcionario {
     private String nome;
     private String telefone;
     private String cargo;
+    @Column(name = "tipo_acesso")
     private Tipos_Acesso tipoAcesso;
     private String acesso;
     private String senha;

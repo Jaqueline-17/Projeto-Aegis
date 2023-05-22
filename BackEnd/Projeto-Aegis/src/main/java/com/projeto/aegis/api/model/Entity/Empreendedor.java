@@ -19,8 +19,11 @@ public class Empreendedor {
     private String nome;
     private String endereco;
     private String telefone;
+    @Column(name = "tipo_acesso")
     private Tipos_Acesso tipoAcesso;
+    @Column(name = "nome_negócio")
     private String nomeNegocio;
+    @Column(name = "tipo_negocio")
     private String tipoNegocio;
     private String acesso;
     private String senha;

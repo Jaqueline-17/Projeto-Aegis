@@ -16,6 +16,7 @@ public class Vendas {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_venda")
     private Long idVenda;
 
     @Column(name = "id_cliente")

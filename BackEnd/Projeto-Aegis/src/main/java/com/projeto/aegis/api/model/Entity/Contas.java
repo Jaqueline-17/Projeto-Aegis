@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import com.projeto.aegis.api.Enums.Status_Contas;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 @Entity
@@ -11,7 +12,9 @@ public class Contas {
 
     private String credor;
     private Double valor;
+    @Column(name = "data_emissão")
     private LocalDate dataEmmissao;
+    @Column(name = "data_vencimento")
     private LocalDate dataVencimento;
     private String descricao;
     private Status_Contas status;
