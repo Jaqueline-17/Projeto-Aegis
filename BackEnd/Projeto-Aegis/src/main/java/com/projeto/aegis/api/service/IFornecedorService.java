@@ -1,5 +1,5 @@
 package com.projeto.aegis.api.service;
 
-public interface EstoqueService {
+public interface IFornecedorService {
     
 }

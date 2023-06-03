@@ -4,12 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.projeto.aegis.api.model.Dto.EmpreendedorDto;
 import com.projeto.aegis.api.model.Entity.Empreendedor;
 import com.projeto.aegis.api.repository.EmpreendedorRepository;
 import com.projeto.aegis.api.service.IEmpreendedorService;
 
+@Service
 public class EmpreendedorServiceImpl implements IEmpreendedorService {
     
     @Autowired
@@ -38,7 +40,7 @@ public class EmpreendedorServiceImpl implements IEmpreendedorService {
     }
 
     @Override
-    public List<Empreendedor> selecionarTodos(Long id) {
+    public List<Empreendedor> selecionarTodos() {
         return empreendedorRepository.findAll();
     }
 
@@ -50,7 +52,7 @@ public class EmpreendedorServiceImpl implements IEmpreendedorService {
     @Override
     public void deletar(Long id) {
        empreendedorRepository.findById(id);
-        empreendedorRepository.deleteById(id);
+       empreendedorRepository.deleteById(id);
     }
 
 

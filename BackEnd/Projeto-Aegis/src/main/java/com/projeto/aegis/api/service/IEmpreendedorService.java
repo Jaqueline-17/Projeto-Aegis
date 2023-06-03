@@ -12,7 +12,7 @@ public interface IEmpreendedorService {
 
     Optional<Empreendedor> selecionarPorId(Long id);
 
-    List<Empreendedor> selecionarTodos(Long id);
+    List<Empreendedor> selecionarTodos();
 
     Empreendedor atualizar(Empreendedor emp);
 
