@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(112, 152, 240);
+}
+
+#container_principal {
+    background-color: white;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    /* adjust the value to the full height of the screen */
+    width: 70vw;
+}
+
+input {
+    max-width: 350px;
+}
+
+#caixa_boas_vindas {
+    border-style: dotted;
+    border-color: red;
+    width: 50em;
+    height: 40em;
+}
+
+#caixa_login {
+    border-color: rgb(57, 98, 212);
+    border-style: dotted;
+    width: 40em;
+    height: 20em;
+    padding: auto;
+}
+
+
+.ajuste-inputs{
+    margin: 10px;
+}
